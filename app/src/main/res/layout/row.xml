@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_cart_list"
+        android:text="Event Details"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#42f4f1"
+        android:background="@drawable/shape"/>
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ib_delete"
+        android:background="@drawable/delete"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@id/tv_cart_list"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cart_list"
+        android:id="@+id/linear">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:layout_marginTop="30dp"
+            android:text="title"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearthree"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_details"
+            android:layout_marginTop="05dp"
+            android:text="details"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_date"
+            android:layout_marginTop="05dp"
+            android:text="date"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_time"
+            android:layout_marginTop="05dp"
+            android:text="time"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

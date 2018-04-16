@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context="com.example.hemanthkumar.create_event.MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:text="Event Info"
+        android:textStyle="bold"
+        android:textColor="#c8cece"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_Eventname"
+        android:hint="Event name"
+        android:textSize="12dp"
+        android:paddingBottom="15dp"
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_Eventdetails"
+        android:hint="Event Details"
+        android:textSize="12dp"
+        android:paddingBottom="15dp"
+      />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_titletwo"
+        android:text="Schedule Event"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#c8cece"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_Selectdate"
+        android:text="Select Date"
+        android:textColor="#000"
+        android:layout_marginTop="05dp"
+        android:layout_marginBottom="05dp"
+        android:layout_alignParentLeft="true"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_datedisplay"
+            tools:text="2018-02-23"
+            android:textColor="#000"
+            android:layout_marginTop="05dp"
+            android:layout_marginBottom="05dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="100dp"
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_selecttime"
+        android:text="Select Time"
+        android:textColor="#000"
+        android:layout_marginBottom="05dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_displaytime"
+            tools:text="10:25"
+            android:textColor="#000"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="05dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_SetAlarm"
+        android:text="Set Alarm"
+        android:textColor="#000"
+        android:layout_weight="1"
+        android:layout_marginBottom="05dp"
+        />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm"
+            android:layout_weight="1"
+
+            />
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_Setremainder"
+        android:text="Set Remainder"
+        android:textColor="#000"
+        android:layout_marginBottom="05dp"
+        android:layout_weight="1"
+       />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_weight="1"
+        android:id="@+id/setremainder"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_eventList"
+        android:background="@drawable/circle"
+        android:src="@drawable/okkk"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+
+
+
+
+      />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/im_select"
+            android:background="@drawable/circle"
+            android:src="@drawable/sa"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+           />
+    </RelativeLayout>
+
+
+</LinearLayout>
